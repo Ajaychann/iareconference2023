@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-pzjw8f+ua5nlp5f+d/kTMt6v4E6D7Jdd6wej2+C1sA9/Fd5xHTBSuXpgF5MzDPB9" crossorigin="anonymous">
+  <title>Conference Website</title>
+  <style>
+    /* Custom styles go here */
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Conference Name</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#speakers">Speakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#registration">Registration</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+      <h1>Welcome to the Conference</h1>
+      <p class="lead">Join us for an amazing event with industry experts and thought leaders.</p>
+      <a href="#registration" class="btn btn-primary btn-lg">Register Now</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2>About the Conference</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat efficitur nisl, vitae lobortis leo
+        rutrum id. Nulla sit amet lorem fringilla, fringilla felis id, dapibus mi. Ut ultrices pulvinar dapibus.
+        Pellentesque pulvinar ultricies nisl eu auctor. Sed id massa id mauris posuere scelerisque.</p>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="py-5 bg-light">
+    <div class="container">
+      <h2>Featured Events</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="event1.jpg" class="card-img-top" alt="Event 1">
+            <div class="card-body">
+              <h5 class="card-title">Event 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="event2.jpg" class="card-img-top" alt="Event 2">
+            <div class="card-body">
+              <h5 class="card-title">Event 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="event3.jpg" class="card-img-top" alt="Event 3">
+            <div class="card-body">
+              <h5 class="card-title">Event 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers Section -->
+  <section id="speakers" class="py-5">
+    <div class="container">
+      <h2>Featured Speakers</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="speaker1.jpg" class="card-img-top" alt="Speaker 1">
+            <div class="card-body">
+              <h5 class="card-title">Speaker 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="speaker2.jpg" class="card-img-top" alt="Speaker 2">
+            <div class="card-body">
+              <h5 class="card-title">Speaker 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="speaker3.jpg" class="card-img-top" alt="Speaker 3">
+            <div class="card-body">
+              <h5 class="card-title">Speaker 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Section -->
+  <section id="registration" class="py-5 bg-light">
+    <div class="container">
+      <h2>Registration</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat efficitur nisl, vitae lobortis leo
+        rutrum id. Nulla sit amet lorem fringilla, fringilla felis id, dapibus mi.</p>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 text-center">
+    <p>&copy; 2023 Conference Name. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-pzjw8f+ua5nlp5f+d/kTMt6v4E6D7Jdd6wej2+C1sA9/Fd5xHTBSuXpgF5MzDPB9"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

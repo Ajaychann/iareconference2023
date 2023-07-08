@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap-5.0.2/bootstrap-5.0.2/dist/css/bootstrap.css"/>
+<script src="bootstrap-5.0.2/bootstrap-5.0.2/dist/js/bootstrap.js"></script>
+<title>My Page</title>
+<style type="text/css">
+    
+
+*{
+margin:0px;
+padding:0px;
+font-family:Arial;
+box-sizing:border-box;
+
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+
+
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+    }
+
+
+#top-div{
+width:100%;
+min-height:10px;
+background-color:rgb(6, 3, 64);
+margin-bottom: 40px;
+overflow: hidden;
+position: sticky;
+}
+
+#bottom1-div{
+width: 15%;
+min-height:40px;
+line-height: 40px;
+background-color:rgb(6, 3, 64);float: left;
+}
+
+#bottom2-div{
+width: 70%;
+height:40px;
+line-height: 40px;
+font-size:small;
+background-color:rgb(6, 3, 64);float: left;
+}
+
+#bottom3-div{
+width: 15%;
+min-height:40px;
+line-height: 40px;
+background-color:rgb(6, 3, 64);float: left;
+}
+
+
+#logo-div{
+    width:100%;
+    min-height: 100px;
+    background-image:url("images/iare_logo.jpg") ;
+}
+#nav-div{
+    width: 100%;
+    min-height: 50px;
+    text-align:right;
+    line-height: 50px;
+    padding-right: 20px;
+   
+}
+a {
+      text-decoration: none;
+      margin-right: 20px;
+      }
+
+      a:hover:not(.active) {
+     color: rgb(37, 4, 77);
+     color: rgb(224, 205, 28);
+     }
+
+    .active {
+     color: #19042e;
+     color: rgb(224, 205, 28);
+    }
+
+
+#header-div{
+     max-width: 100%;
+     min-height: 100%;
+}
+
+marquee{
+      font-size:medium;
+      font-weight: 500;
+      color: #ffffff;
+      font-family: sans-serif;
+      background: #19042e;
+      
+}
+
+     
+
+.date {
+      position: absolute;
+      width:40%;
+      
+      height: 65px;
+      top: 450px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+      
+      background-image:url("images/img_date.jpg") ;
+}
+
+.imageContainer {
+   margin-left:50%;
+   display: inline-block;
+   position: relative;
+   text-align: center;
+   
+}
+.caption{
+   font-size: 25px;
+   font-family:'Arial, Helvetica, sans-serif ';
+   color: rgb(0, 0, 0);
+   top: 300px;
+}
+.caption .center h4, h3 {
+    margin:0% auto;
+    
+}
+.center {
+   position: absolute;
+   left: 50%;
+   text-align:center;
+   transform: translate(-50%, -50%);
+}
+
+.bottom {
+   position: absolute;
+   top: 550px;;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+
+.btn 
+    {
+   position: absolute;
+   top: 600px;
+   left: 50%;
+   
+   transform: translate(-50%, -50%);
+   background-color: #f4d90e;
+   
+   font-size: 16px;
+   text-align:justify;
+   padding: 12px 24px;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+     .btn:hover {
+        
+        
+        background-color: transparent;
+        border: 2px solid #f4d90e;
+    
+    }
+
+
+
+
+  .conf-div{
+    width: 100%;
+    min-height: 200px;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 200px;
+    color:#19042e;
+
+
+  }
+  .days-box{
+
+    float: left;
+    left: 50%;
+    padding-left: 30%;; 
+    
+  
+  }
+
+  .badge{
+   font-size: 15px;
+   text-align: center;
+   padding: 12px 20px;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   left:50%;
+   width: 130px;
+    
+  }
+
+  .timing{
+    position: absolute;
+    left: 50%;
+    margin-bottom: 10px;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+
+
+#wrapper-div{
+   width: 80%;
+    margin: auto; 
+}
+
+ .container{
+
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 100px;
+
+ }   
+ 
+ .images{
+
+    min-width: 400px;
+
+ }
+
+ .container:nth-child(even){
+    flex-direction: row-reverse;
+ }
+
+.clearfix{
+    text-align: justify;
+    margin-top: 5px;
+}
+
+
+
+
+.table-container{
+ width: 100%;
+ margin: auto; 
+ margin-top: 30px;  
+}
+.index-table{
+
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+.index-table th{
+    background-color: rgb(4, 4, 110);
+    color: #ffffff;
+    min-height: 40px;
+    line-height: 40px;
+    text-align: center;
+    
+}
+.index-table tr{
+    min-height: 50px;
+    line-height: 50px;
+    border-left: 2px;
+    border-left: #f4d90e;
+}
+.index-table td{
+    padding-left: 5px;
+}
+
+tr:nth-child(even) {
+    background: #CCC}
+tr:nth-child(odd) {
+    background: #FFF}
+  
+    .download-div{
+        width: 100%;
+        min-height: 200px;
+        background-color: #FFF;
+        margin-bottom: 50px;
+    }
+
+
+    .link{
+        position: relative;
+        margin-top: 40px;  
+        margin-left: auto; 
+       margin-right: auto;
+        
+    }
+
+    .link h6{
+        top: 30px;
+        left:50px;
+        
+    }
+
+
+
+
+    .link1-div{
+        width: 19%;
+        height: 200PX;
+        background-color: #0a0480fb;
+        background-image: url("images/conf.jpg");
+        color: #FFF;
+        text-align: center;
+        background-size: contain;
+        float: left;
+        
+    }
+    
+
+
+    .link2-div{
+        width: 19%;
+        height: 200PX;
+        background-color: #0a0480fb;
+        background-image: url("images/confp.jpg");
+        color: #FFF;
+        text-align: center;
+        background-size: contain;
+        float: left;
+        
+    }
+
+    .link3-div{
+        width: 19%;
+        height: 200PX;
+        background-color: #0a0480fb;
+        background-image: url("images/papersub.jpg");
+        color: #FFF;
+        text-align: center;
+        background-size: contain;
+        float: left;
+        
+    }
+
+    .link4-div{
+        width: 19%;
+        height: 200PX;
+        background-color: #0a0480fb;
+        background-image: url("images/tempinst.jpg");
+        color: #FFF;
+        text-align: center;
+        background-size: contain;
+        float: left;
+        
+    }
+    .link5-div{
+        width: 19%;
+        height: 200PX;
+        background-color: #0a0480fb;
+        background-image: url("images/queries.jpg");
+        color: #FFF;
+        text-align: center;
+        background-size: contain;
+        float: left;
+    }
+   
+    .margin-div{
+        min-height: 200PX;
+        width: 15px;  
+        background-color: #FFF;
+        float: left;
+    }
+    .conftracks-div{
+        width: 100%;
+        height: 500px;
+        background-color: #0c04a6;
+        text-align:center;
+        color: #b8a307;
+       
+    }
+     
+    .conftracks-div h2{
+        margin-top: 30px;
+        top: 30px;
+    }
+    .conftracks1-div{
+        width: 70%;
+        border: 5px solid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;  
+ 
+    }
+    .conftracks2-div{
+        background-color: #FFF;
+        width: 50%;
+        height: 100%;
+    }
+    .conftracks3-div{
+        background-color: #CCC;
+        width: 50%;
+        height: 100%;
+    }
+
+    
+   
+
+    .rotate {
+  animation: rotation 8s infinite linear;
+  /* background-color: #0c04a6;
+     border-image-width: auto;  */
+  
+  width: 35px; 
+  height: 35px;
+  color: #FFF;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+  
+}
+
+
+
+    .rotate1-div{       
+  position: relative;
+  float:right;
+  margin-left: 30px;
+  border: 1px solid #FFF;
+  width:60%;
+  min-height: 60px;
+  margin-bottom: 20px;
+  color: #FFF;
+  text-align: left;
+  
+  
+    }
+
+
+    .rotate1-div img{
+        position: relative;
+        display: flex;
+        float: left;
+        background-color:transparent;
+        margin-right: 30px;
+        
+    }
+
+    
+
+
+    .rotate2-div{
+  position: relative;
+  float:left;
+  margin-left: 30px;
+  border: 1px solid #FFF;
+  width:60%;
+  min-height: 60px;
+  margin-bottom: 20px;
+  color: #FFF;
+  text-align:left;
+    }
+
+
+    .rotate2-div img{
+        position: relative;
+        display: flex;
+        float: left;
+        background-color:transparent;
+        margin-right: 30px;
+    }
+    .box-div{
+        width: 100%;
+        min-height: 1000px;
+        background-color: #FFF;
+    }
+    .box1-div{
+       
+  width: 20%;
+  border: 3px dotted #070c00;
+  min-height: 170px;
+  float: left;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 150px;
+    }
+
+    .bottom-div{
+        width: 80%;
+        min-height: 1000px;
+       float: left;
+       align-items: center;
+       margin-top: 100px;
+       margin-left: 150px;
+       
+        
+        
+    }
+    
+    .footer-div{
+        width: 100%;
+        height: 40px;
+        background-color: #090580;
+        color: #FFF;
+
+    }
+   .footer1-div{
+    position: relative;
+    width: 50%;
+    top: 7px;
+    margin-left: 20px;
+   }
+
+
+   
+   
+
+</style>
+</head>
+<body>
+
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 15, 2023 10:30:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          
+          document.getElementById("days").innerHTML =days +" DAYS";
+          document.getElementById("hours").innerHTML =hours +" HOURS";
+          document.getElementById("minutes").innerHTML =minutes +" MINUTES";
+          document.getElementById("seconds").innerHTML =seconds +" SECONDS";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        
+        </script>
+
+
+<div id="top-div">
+
+</div>
+<div id="logo-div"></div>
+
+<div id="nav-div">
+<a class="active" href="#">Home</a>
+<a href="#">Committee</a>
+<a href="#">Key Note</a>
+<a href="#">Call For Paper</a>
+<a href="#">Registration</a>
+<a href="#">Contact Us</a>
+<a href="#">More</a>
+</div >
+<div id="header-div">
+<img src="images\IARE_College_View.jpg" alt="Blue Sky">
+
+
+
+<div class="caption center">
+    <h4 style="font-size:smaller;margin-bottom:10px;font-weight: 500;">INTERNATIONAL CONFERENCE ON</h4>
+    <h3>POWER, COMMUNICATION, COMPUTATIONAL INTELLIGENCE AND MANAGEMENT</h3>
+    <h5>PCCIM 2023</h5>
+</div>
+
+<div class="date" ></div>
+
+<div class="caption bottom">
+    <h2 style="color:rgb(8, 3, 97); font-weight: 700;">ORGANISED BY IARE</h2>
+</div>
+    
+    <div><button class="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >SUBMIT YOUR PAPERS</a></button></div>
+</div>
+
+<div id="bottom1-div"></div>
+<div id="bottom2-div"> <marquee behavior="scroll" direction="left" >“NOTE: All the PCCM 2023 presented papers will be submitted to IEEE xplore and submitted for indexing to Scopus”</marquee></div>
+<div id="bottom3-div"></div>
+
+<div class="conf-div">
+    <h1 style="font-weight: 500;font-size: 50px;">Conference Begins After</h1>
+</div>
+
+<div class="timing">
+    <!--        
+    <div class="days-box">
+        <div class="day" id="days"></div>
+        <span style="background-color: #74cee4;">Days</span>
+    </div>
+    
+    <div class="days-box">
+        <div class="day" id="hours"></div>
+        <span style="background-color: #edbf47;">Hours</span>
+    </div>
+    
+    <div class="days-box">
+        <div class="day" id="mins"></div>
+        <span style="background-color: #ec774b;">Minutes</span>
+    </div>
+    
+    <div class="days-box">
+        <div class="day" id="secs"></div>
+        <span style="background-color: #6fc191;">Seconds</span>
+    </div>
+    -->
+        
+    <span class="badge bg-info" id="days">DAYS</span>
+    <span class="badge bg-warning" id="hours">HOURS</span>
+    <span class="badge bg-danger" id="minutes">MINUTES</span>
+    <span class="badge bg-success" id="seconds">SECONDS</span>
+</div>
+
+<div id="wrapper-div">
+
+
+ <div class="container">
+    <div class="images">
+        <img style="float:left" src="images\about-IARE.jpg" alt="#" >
+        <div class="image even-sec"><img src="images\about.jpg" alt="About IARE"></div> 
+    </div>
+
+    <div class="clearfix" >
+    
+        Institute of Aeronautical Engineering (IARE), Hyderabad was established in the year 2000 and is run by Maruthi Educational Society founded by a devoted group of eminent professional and industrialists having a long and outstanding experience in educational system with a mission ‘Education for Liberation’. It is the first institute to start B.Tech program in Aeronautical Engineering in the state of Telangana and has gradually transformed itself into an integrated multi-disciplinary technological institute. It is the most preferred institute with 100% admissions in the state of Telangana.
+
+IARE is a prestigious  Autonomous engineering college offering eleven B.Tech programs Computer Science and Engineering, Computer Science and Engineering (Artificial Intelligence and Machine Learning), Computer Science and Engineering (Data Science), Computer Science and Engineering (Cyber Security), Computer Science and Information Technology, Information Technology, Electronics and Communication Engineering, Electrical and Electronics Engineering, Aeronautical Engineering, Mechanical Engineering, Civil Engineering and six M.Tech programs in engineering and MBA (Master of Business Administration) with 21 years of rich standing in the educational sphere. The institute is approved by AICTE, New Delhi; recognized by Govt. of Telangana; permanently affiliated to Jawaharlal Nehru Technological University Hyderabad (JNTUH); and accredited by National Assessment and Accreditation Council (NAAC) with ‘A’ Grade. All the seven B.Tech programs are accredited thrice by National Board of Accreditation (NBA), New Delhi since 2008. The institute also received UGC recognition under Sections 2(f) and 12(B) of the UGC Act.
+
+The institute is ranked 159 in Engineering category as per National Institutional Ranking Framework (NIRF)  – 2021, Ministry of Education, Govt. of India. This illustrates positive performance and quality standards we maintain in Teaching, Research, Employability, and Innovation. Categorized as 'Band Excellent' institution in category of ‘Private or Self-Financed College/Institutes’ in Atal Ranking of Institutions on Innovation Achievement (ARIIA) – 2021, as per MHRD’s Innovation Cell, Ministry of Education, Govt. of India.
+      </div>
+    
+ </div>   
+
+    
+ <div class="container">
+    <div class="images">
+        <img style="float:left" src="images\ai.jpg" alt="#" >
+        <div class="image even-sec"><img src="images\pccim.jpg" alt="About IARE"></div> 
+    </div>
+
+    <div class="clearfix" >
+    
+        PCCIM 2023 is an International Conference focused exclusively on academicians, industrialist and students to present their latest research results, ideas, developments, and applications in all areas of Information Sciences, Security and Communication. The main objective of this conference is to bring together thought leaders from industry, academia, government agencies and other institutions to exchange information and ideas on advancing the state-of-the-art in these fields. It will be a catalyst for bringing together participants from academia and industry to help foster new connections and ideas. Incremental adoption of Computational Intelligence has demonstrated value creation. It offers exciting capabilities that enable new set of opportunities, starting from OPEX optimization, customized products and services, and many more, that can only be imagined. The conference focuses on incremental adoption of these maximizing the value to customers and resolves the challenges in knitting the technology together
+      </div>
+    
+ </div>  
+ 
+ 
+ <div class="table-container">
+    <table class="index-table">
+        <thead>
+            <tr>
+                <th colspan="2">IMPORTANT DATES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Last Date for Paper Submission</td>
+                <td>15<sup>th</sup> May, 2023</td>
+            </tr>
+            <tr>
+                <td>Notification of acceptance</td>
+                <td>31<sup>st</sup> November, 2023</td>
+            </tr>
+            <tr>
+                <td>Camera Ready Paper Submission</td>
+                <td>5<sup>th</sup> August, 2023</td>
+            </tr>
+            <tr>
+                <td>Last Date for Registration</td>
+                <td>6<sup>th</sup> September, 2023</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="download-div">
+
+    <div class="link1-div"><a href="https://www.google.com/"><img src="images/link1.jpg" class="link"></a><P><h6>CONFERENCE BROCHURE</h6></P></div>
+    <div class="margin-div"></div>
+    <div class="link2-div"><a href="https://www.google.com/"><img src="images/link1.jpg" class="link"></a><P><h6>CONFERENCE POSTER</h6></P></div>
+    <div class="margin-div"></div>
+    <div class="link3-div"><a href="https://www.google.com/"><img src="images/link1.jpg" class="link"></a><P><h6>FOR PAPER SUBMISSION</h6></P></div>
+    <div class="margin-div"></div>
+    <div class="link4-div"><a href="https://www.google.com/"><img src="images/link1.jpg" class="link"></a><P><h6>FOR TEMPLATES AND INSTRUCTIONS</h6></P></div>
+    <div class="margin-div"></div>
+    <div class="link5-div" ><a href="https://www.google.com/"><img src="images/link1.jpg" class="link"></a><P><h6>FOR ANY QUERIES CONTACT:iiac@nic.in</h6></P></div>
+</div>
+
+</div> 
+<div class="conftracks-div"><h2>CONFERENCE TRACKS</h2>
+ <div class="conftracks2-div" style="background-color: #0c04a6; float: left; margin-top:40px;">
+   <div class="rotate1-div"><img src="images\electronics.png" class="rotate" /><p><h6>Electronics Devices, Circuits and Systems</h6></p></div>
+   <div class="rotate1-div"><img src="images\communication-tec.png" class="rotate" /><p><h6>Network Technologies and Systems</h6></p></div>
+   <div class="rotate1-div"><img src="images\signal-processing.png" class="rotate" /><p><h6>ignal Processing</h6></p></div>
+   <div class="rotate1-div"><img src="images\data-mining.png" class="rotate" /><p><h6>Data Mining and Big Data Analysis</h6></p></div>
+   <div class="rotate1-div"><img src="images\communication-tec.png" class="rotate" /><p><h6>Communication Technologies and Systems</h6></p></div>
+   <div class="rotate1-div"><img src="images\bioinformatics.png" class="rotate" /><p><h6>Bioinformatics and Machine Learning Algorithms</h6></p></div>
+</div>  
+ <div class="conftracks3-div" style="background-color: #0c04a6; float: left; margin-top:40px;">
+    <div class="rotate2-div"><img src="images\multimedia.png" class="rotate" /><p><h6></h6>Multimedia Processing Technologies and Systems</h6></p></div>
+    <div class="rotate2-div"><img src="images\language-tec.png" class="rotate" /><p><h6></h6>Language Technologies and Information Retrieval</h6></p></div>
+    <div class="rotate2-div"><img src="images\robotics.png" class="rotate" /><p><h6></h6>Robotics and Artificial Intelligence</h6></p></div>
+    <div class="rotate2-div"><img src="images\power.png" class="rotate" /><p><h6></h6>Power Electronics and Control Engineering</h6></p></div>
+    <div class="rotate2-div"><img src="images\multimedia.png" class="rotate" /><p><h6></h6>Security, Privacy and Digital Forensics</h6></p></div>
+    <div class="rotate2-div"><img src="images\multimedia.png" class="rotate" /><p><h6></h6>Internet of Things</h6></p></div>
+</div>
+
+           
+</div>  
+<div class="box-div">
+    <div class="box1-div"></div>
+    <div class="box1-div"></div>
+    <div class="box1-div"></div>
+    
+    <div class="bottom-div"><img src="images\IARE_College_View.jpg" alt="Blue Sky"></div>
+ 
+   
+    
+    
+    <div class="footer-div"><div class="footer1-div">Copyrights Reserved @ 2023</div></div>         
+</body>
