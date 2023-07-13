@@ -36,7 +36,7 @@
 
              }
 
-             #topline-div
+             #topline1-div
              {
                   display:flex;
                   flex-direction:row;
@@ -65,24 +65,23 @@
                   display: flex;
                   flex-direction: row;
                   width: 100%;
-                  min-height: 50px;
+                  min-height: 60px;
+                  
             }
+                        
             #nav1-div{
                   display: flex;
                   flex-direction: row;
-                  flex-basis: 50%;
-            }
-            
-            #nav2-div{
-                  display: flex;
-                  flex-direction: row;
                   flex-basis: 100%;
-                 
+                  font-weight: bold;
                   align-items: center;
                   margin: auto;
-                       
-            }
 
+                  min-height: 60px;
+                  position: sticky;
+                  color: rgb(4, 10, 128);
+                  box-shadow: 0px 1px 25px black;
+            }
 
                   a {
                   display: flex;
@@ -90,15 +89,15 @@
                   text-decoration: none;
                   margin: auto;
                  
-             }
+            }
 
            a:hover:not(.active) {
-                 color: rgb(37, 4, 77);
+                 
                  color: rgb(224, 205, 28);
              }
 
              .active {
-                 color: #19042e;
+                 
                  color: rgb(224, 205, 28);
              }
 
@@ -136,7 +135,7 @@
                   align-items: center;
                   font-size: 14px;
                   color:rgb(6, 3, 64);
-                  margin-top: 10px;
+                  
              }
              #imgdate-div{
                   display: flex;
@@ -145,7 +144,7 @@
                   min-height: 40px;
                   justify-content: center;
                   align-items: center;
-                  margin-top: 20px;
+                  
                   
                   }
 
@@ -233,71 +232,121 @@
       justify-content: center;
       width: 100%;
       min-height: 30px;
-      justify-content: center;
       align-items: center;
-
+      
+     
   }
 
-    #badge{
+    .badge{
       
      font-size: 15px;
      text-align: center;
-     padding:40px 60px;
+     line-height: 2rem;
      border: none;
      cursor: pointer;
      border-radius: 5px;
-     left:50%;
+     
+     width: 7rem;
+     height: 3rem;
+    
   
     
   }
+
+
   
 
     #about-div{
-
+      margin-top: 30px;
       display: flex;
       flex-direction: row;
       width: 100%;
       min-height: 100px;
-      margin-top: 30px;
+      
       justify-content: center;
+      
     }
     #about1-div{
       display: flex;
       flex-direction: row;
       flex-basis: 80%;
+      
     }
     #img-div{
      display: flex;
      flex-direction: column;
      flex-basis: 20%;
-     min-height: 100px;
-
+     
     }
+
     #img1-div{
       display: flex;
       flex-direction: row;
-      flex-basis: 100%;
-      height: 580px;
+      width: 100%;
+      height: 320px;
+      margin-bottom: 10px;
       
     }
+    #img1{
+      display: flex;
+      width: 300px;
+      height: 330px;
+      
+    }
+    
     #img2-div{
       display: flex;
-      flex-direction: row;
-      flex-basis: 100%;
-      min-height: 20px;
-      
-
+      width: 100%;
+      height: 50px;
+     
+    }
+    #img2{
+      display: flex;
+      width: 300px;
+      height: 50px;
+     
     }
 
     #abouttext-div{
 
       display: flex;
-      flex-direction: row;
+      flex-direction:column;
       flex-basis: 80%;
       min-height: 100px;
       text-align: justify;
-      margin-top: 10px;
+      
+      
     }
+
+
+    #abouttext1-div{
+                display: flex;
+                flex-direction: row;
+                flex-basis: 100%;
+                min-height: 125px;
+               
+                text-align: justify;
+               
+             }
+      
+             #abouttext2-div{
+                display: flex;
+                flex-direction: row;
+                flex-basis: 100%;
+                min-height:200px;
+                text-align: justify;
+                margin-bottom: 20px;
+
+             }
+
+             #abouttext3-div{
+                display: flex;
+                flex-direction: row;
+                flex-basis: 100%;
+                min-height: 30px;
+                text-align: justify;
+               
+             }
   #ai-div{
       display: flex;
       flex-direction: row;
@@ -305,41 +354,60 @@
       min-height: 100px;
       margin-top: 30px;
       justify-content: center;
-
+     
   }
   #ai1-div{
       display: flex;
       flex-direction: row;
       flex-basis: 80%;
+      
   }
   #aitext-div{
-      margin-top: 20px;
+     
       display: flex;
       flex-direction: row;
-      flex-basis: 100%;
+      flex-basis: 70%;
       text-align: justify;
+      
+      line-height: 35px;
   }
   #imgai-div{
      display: flex;
      flex-direction: column;
-     flex-basis: 20%;
+     flex-basis: 30%;
      min-height: 100px;
+     
 
-    }
-    #img3-div{
-      display: flex;
-      flex-direction: row;
-      flex-basis: 100%;
-      height: 400px;
-      
     }
     #img4-div{
       display: flex;
       flex-direction: row;
-      flex-basis: 100%;
-      min-height: 20px;   
- }
+      width: 100%;
+      min-height: 260px;
+      
+      
+    }
 
+    #img4{
+      display: flex;
+      width: 370px;
+      height: 320px;
+      
+    }
+    #img5-div{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 45px;
+      
+ }
+  #img5{
+
+      display: flex;
+      width: 370px;
+      height: 55px;
+     
+  }
 
  #table-container{
     display: flex;
@@ -407,16 +475,18 @@ tr:nth-child(odd) {
 
    #conftracks-div{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       width: 100%;
-      min-height: 500px;
+      min-height: 400px;
       background-color: #0a0480fb ;
+      text-align: center;
       justify-content: center;
+      color:goldenrod;
    } 
 
    #conftracks-div h2{
-        margin-top: 30px;
-        top: 30px;
+        margin-top: 50px;
+       
     }
    #conftracks1-div{
      display: flex;
@@ -424,14 +494,17 @@ tr:nth-child(odd) {
      flex-basis: 70%;
     
      justify-content: space-between;
-     margin-top: 130px;
+    
      margin-bottom: 35px;
+     
     
    }
    #conftracks2-div{
      display: flex;
      flex-direction: column;
      flex-basis: 45%;
+     
+     align-items:flex-end;
     
    }
    #conftracks3-div{
@@ -439,12 +512,13 @@ tr:nth-child(odd) {
      flex-direction: column;
      flex-basis: 45%;
      
+     
    }
    .rotate-div{
       display: flex;
       flex-direction: row;
       border: 1px solid #FFF;
-      width:95%;
+      width:70%;
   min-height: 60px;
   margin-bottom: 20px;
   color: #FFF;
@@ -513,8 +587,7 @@ tr:nth-child(odd) {
 
 
 #video-div{
-      display: flex;
-      flex-direction: row;
+     
       background-image: url("images/IARE_College_View.jpg");
     width: 80%;
     height:500px;
@@ -527,8 +600,7 @@ tr:nth-child(odd) {
 
 
   .shadow-div:after {
-      display: flex;
-      flex-direction: row;
+     
       content:"";
     position:absolute;
     width:100%;
@@ -536,6 +608,22 @@ tr:nth-child(odd) {
     z-index:-1;
     transform:scale(.9);
     box-shadow: 0px 0px 8px 2px #000000;
+}
+
+#bottom-div{
+      display: flex;
+      flex-direction: row;
+      min-height: 300px;
+      background-color: #000000;
+}
+
+#footer-div{
+
+display: flex;
+flex-direction:row;
+min-height: 50px;
+background-color: #0a0480fb ;
+
 }
     
  </style>
@@ -547,8 +635,8 @@ tr:nth-child(odd) {
   <body>
       <div id="wrapper-div">
 
-                     <div id="topline-div">
-                     </div>
+                     <!--<div id="topline1-div">
+                     </div>-->
                      
                      
                      
@@ -556,22 +644,22 @@ tr:nth-child(odd) {
                      
                      <div id="nav-div">
                              
-                           <div id="nav2-div" >
+                           <div id="nav1-div" >
                                <a class="active" href="#">Home</a>
                                <a href="#">Committee</a>
-                               <a href="#">Key Note</a>
+                               <a href="#">Keynote</a>
                                <a href="#">Call For Paper</a>
                                <a href="#">Registration</a>
                                <a href="#">Contact Us</a>
                                <a href="#">More</a>
                            </div >
                      </div>
-                     <div id="line-div"></div>
+                    <!-- <div id="line-div"></div>-->
                      <div id="image-div">
                         <div id="text-div">
-                        <div id="text1-div">INTERNATIONAL CONFERENCE ON POWER, COMMUNICATION, COMPUTATIONAL INTELLIGENCE AND MANAGEMENT</div>
+                        <div id="text1-div"><p><b>INTERNATIONAL CONFERENCE ON POWER, COMMUNICATION, COMPUTATIONAL INTELLIGENCE AND MANAGEMENT</b></p></div>
                        
-                        <div id="text2-div">PCCIM 2023</div>
+                        <div id="text2-div"><p><b>PCCIM 2023</b></p></div>
                         
                         <div id="imgdate-div"><img src="images\img1_date.jpg" alt="#" style="border-radius: 10px;" ></div>
                         
@@ -579,15 +667,19 @@ tr:nth-child(odd) {
                         </div>
                      </div>
                      
+                     <!--
                      <div id="marquee-div">
                         <div id="marquee1-div"></div>
                         <div id="marquee2-div"><marquee behavior="scroll" direction="left" >“NOTE: All the PCCM 2023 presented papers will be submitted to IEEE xplore and submitted for indexing to Scopus”</marquee></div>
                         <div id="marquee1-div"></div>
                      </div>
                      <div id="blank1-div"></div>
+                     
+                     -->
+                     
                      <div id="logo-div">
                   </div>
-                     <div id="conftxt-div" style="font-weight: 500;font-size: 30px;">Conference Begins After</div>
+                     <div id="conftxt-div" style="font-weight:bold;font-size: 30px;">Conference Begins After</div>
              
                   <div id="time-div">
                      <span class="badge" style="background-color: cyan;" id="days">DAYS</span>
@@ -595,33 +687,58 @@ tr:nth-child(odd) {
                      <span class="badge" style="background-color: crimson;" id="minutes">MINUTES</span>
                      <span class="badge" style="background-color: green;" id="seconds">SECONDS</span>
                   </div>
+                 
+                 
+                 
+                 
+                
+                  
                   <div id="about-div">
                         <div id="about1-div">
                             <div id="img-div">
-                                 <div id="img1-div"><img src="images\about-IARE.jpg"></div>
-                                 <div id="img2-div"><img src="images\about.jpg"></div>
+                                 <div id="img1-div"><img src="images\about-IARE.jpg" alt="#" id="img1" width="450px" height="600px"></div>
+                                 <div id="img2-div"><img src="images\about.jpg" alt="#" id="img2" width="400px" height="50px"></div>
                             </div>
-                            <div id="abouttext-div">Institute of Aeronautical Engineering (IARE), Hyderabad was established in the year 2000 and is run by Maruthi Educational Society founded by a devoted group of eminent professional and industrialists having a long and outstanding experience in educational system with a mission ‘Education for Liberation’. It is the first institute to start B.Tech program in Aeronautical Engineering in the state of Telangana and has gradually transformed itself into an integrated multi-disciplinary technological institute. It is the most preferred institute with 100% admissions in the state of Telangana.
-
-                              IARE is a prestigious  Autonomous engineering college offering eleven B.Tech programs Computer Science and Engineering, Computer Science and Engineering (Artificial Intelligence and Machine Learning), Computer Science and Engineering (Data Science), Computer Science and Engineering (Cyber Security), Computer Science and Information Technology, Information Technology, Electronics and Communication Engineering, Electrical and Electronics Engineering, Aeronautical Engineering, Mechanical Engineering, Civil Engineering and six M.Tech programs in engineering and MBA (Master of Business Administration) with 21 years of rich standing in the educational sphere. The institute is approved by AICTE, New Delhi; recognized by Govt. of Telangana; permanently affiliated to Jawaharlal Nehru Technological University Hyderabad (JNTUH); and accredited by National Assessment and Accreditation Council (NAAC) with ‘A’ Grade. All the seven B.Tech programs are accredited thrice by National Board of Accreditation (NBA), New Delhi since 2008. The institute also received UGC recognition under Sections 2(f) and 12(B) of the UGC Act.
-                              
-                              The institute is ranked 159 in Engineering category as per National Institutional Ranking Framework (NIRF)  – 2021, Ministry of Education, Govt. of India. This illustrates positive performance and quality standards we maintain in Teaching, Research, Employability, and Innovation. Categorized as 'Band Excellent' institution in category of ‘Private or Self-Financed College/Institutes’ in Atal Ranking of Institutions on Innovation Achievement (ARIIA) – 2021, as per MHRD’s Innovation Cell, Ministry of Education, Govt. of India.
-                            </div> 
+                            <div id="abouttext-div">
+                              <div id="abouttext1-div"><p>Institute of Aeronautical Engineering (<b>IARE</b>), Hyderabad was established in the year 2000 and is run by Maruthi Educational Society founded by a devoted group of eminent professional and industrialists having a long and outstanding experience in educational system with a mission ‘Education for Liberation’. It is the first institute to start B.Tech program in Aeronautical Engineering in the state of Telangana and has gradually transformed itself into an integrated multi-disciplinary technological institute. It is the most preferred institute with 100% admissions in the state of Telangana.</p></div>
+                              <div id="abouttext2-div"><p>IARE is a prestigious  <b>Autonomous</b> engineering college offering eleven B.Tech programs Computer Science and Engineering (CSE), CSE (Artificial Intelligence and Machine Learning), CSE (Data Science), CSE (Cyber Security), Information Technology, Computer Science and Information Technology, Electronics and Communication Engineering, Electrical and Electronics Engineering, Aeronautical Engineering, Mechanical Engineering, Civil Engineering and six M.Tech programs in engineering and MBA (Master of Business Administration) with 23 years of rich standing in the educational sphere. The institute is approved by AICTE, New Delhi; recognized by Govt. of Telangana; permanently affiliated to Jawaharlal Nehru Technological University Hyderabad (JNTUH); and accredited by National Assessment and Accreditation Council (NAAC) with ‘A’ Grade. All the seven B.Tech programs are accredited thrice by National Board of Accreditation (NBA), New Delhi since 2008. The institute also received UGC recognition under Sections 2(f) and 12(B) of the UGC Act.</p></div>
+                              <div id="abouttext3-div"><p>The institute is ranked <b>151-200</b> in Engineering category and ranked <b>51-100</b> in Innovation category as per <b>National Institutional Ranking Framework (NIRF)</b>  – 2023, Ministry of Education, Govt. of India.</p></div>
+                           </div>
                        </div>   
                   </div>
 
+                  
                   <div id="ai-div">
                         <div id="ai1-div">
                                <div id="aitext-div">PCCIM 2023 is an International Conference focused exclusively on academicians, industrialist and students to present their latest research results, ideas, developments, and applications in all areas of Information Sciences, Security and Communication. The main objective of this conference is to bring together thought leaders from industry, academia, government agencies and other institutions to exchange information and ideas on advancing the state-of-the-art in these fields. It will be a catalyst for bringing together participants from academia and industry to help foster new connections and ideas. Incremental adoption of Computational Intelligence has demonstrated value creation. It offers exciting capabilities that enable new set of opportunities, starting from OPEX optimization, customized products and services, and many more, that can only be imagined. The conference focuses on incremental adoption of these maximizing the value to customers and resolves the challenges in knitting the technology together
                                </div> 
 
                                <div id="imgai-div">
-                                 <div id="img4-div"><img src="images\ai.jpg"></div>
-                                 <div id="img5-div"><img src="images\pccim.jpg"></div>
+                                 <div id="img4-div"><img src="images\ai.jpg" alt="#" id="img4" width="547px" height="422px"></div>
+                                 <div id="img5-div"><img src="images\pccim.jpg" alt="#" id="img5" width="510px" height="52px"></div>
                                </div>
                            
                        </div>   
-                  </div>
+                  </div>             
+                  
+                 
+
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  
+                  
                   <div id="table-container">
                         <table class="index-table">
                             <thead>
@@ -657,23 +774,23 @@ tr:nth-child(odd) {
                         <div class="link1-div"><a href="https://www.google.com/"><img src="images/link1.jpg" class="link"></a><P><h6>FOR TEMPLATES AND INSTRUCTIONS</h6></div>
                         <div class="link1-div"><a href="https://www.google.com/"><img src="images/link1.jpg" class="link"></a><P><h6>FOR ANY QUERIES CONTACT:iiac@nic.in</h6></div>
                     </div>
-                  <div id="conftracks-div">
+                  <div id="conftracks-div"><p><h2>CONFERENCE TRACKS</h2></p>
                             <div id="conftracks1-div">
                                  <div id="conftracks2-div">
-                                     <div class="rotate-div"><img src="images\electronics.png" class="rotate" /><p><h6>Electronics Devices, Circuits and Systems</h6></p></div>
-                                     <div class="rotate-div"><img src="images\communication-tec.png" class="rotate" /><p><h6>Network Technologies and Systems</h6></p></div>
-                                     <div class="rotate-div"><img src="images\signal-processing.png" class="rotate" /><p><h6>ignal Processing</h6></p></div>
-                                     <div class="rotate-div"><img src="images\data-mining.png" class="rotate" /><p><h6>Data Mining and Big Data Analysis</h6></p></div>
-                                     <div class="rotate-div"><img src="images\communication-tec.png" class="rotate" /><p><h6>Communication Technologies and Systems</h6></p></div>
-                                     <div class="rotate-div"><img src="images\bioinformatics.png" class="rotate" /><p><h6>Bioinformatics and Machine Learning Algorithms</h6></p></div>
+                                     <div class="rotate-div"><img src="images\electronics.jpg" class="rotate" /><p><h6>Electronics Devices, Circuits and Systems</h6></p></div>
+                                     <div class="rotate-div"><img src="images\network.jpg" class="rotate" /><p><h6>Network Technologies and Systems</h6></p></div>
+                                     <div class="rotate-div"><img src="images\signal-processing.jpg" class="rotate" /><p><h6>Signal Processing</h6></p></div>
+                                     <div class="rotate-div"><img src="images\data-mining.jpg" class="rotate" /><p><h6>Data Mining and Big Data Analysis</h6></p></div>
+                                     <div class="rotate-div"><img src="images\communication-tec.jpg" class="rotate" /><p><h6>Communication Technologies and Systems</h6></p></div>
+                                     <div class="rotate-div"><img src="images\bioinformatics.jpg" class="rotate" /><p><h6>Bioinformatics and Machine Learning Algorithms</h6></p></div>
                                 </div>
                                 <div id="conftracks3-div">
-                                     <div class="rotate-div"><img src="images\multimedia.png" class="rotate" /><p><h6></h6>Multimedia Processing Technologies and Systems</h6></p></div>
-                                     <div class="rotate-div"><img src="images\language-tec.png" class="rotate" /><p><h6></h6>Language Technologies and Information Retrieval</h6></p></div>
-                                     <div class="rotate-div"><img src="images\robotics.png" class="rotate" /><p><h6></h6>Robotics and Artificial Intelligence</h6></p></div>
-                                     <div class="rotate-div"><img src="images\power.png" class="rotate" /><p><h6></h6>Power Electronics and Control Engineering</h6></p></div>
-                                     <div class="rotate-div"><img src="images\multimedia.png" class="rotate" /><p><h6></h6>Security, Privacy and Digital Forensics</h6></p></div>
-                                     <div class="rotate-div"><img src="images\multimedia.png" class="rotate" /><p><h6></h6>Internet of Things</h6></p></div>
+                                     <div class="rotate-div"><img src="images\multimedia.jpg" class="rotate" /><p><h6></h6>Multimedia Processing Technologies and Systems</h6></p></div>
+                                     <div class="rotate-div"><img src="images\language-tec.jpg" class="rotate" /><p><h6></h6>Language Technologies and Information Retrieval</h6></p></div>
+                                     <div class="rotate-div"><img src="images\robotics.jpg" class="rotate" /><p><h6></h6>Robotics and Artificial Intelligence</h6></p></div>
+                                     <div class="rotate-div"><img src="images\power.jpg" class="rotate" /><p><h6></h6>Power Electronics and Control Engineering</h6></p></div>
+                                     <div class="rotate-div"><img src="images\multimedia.jpg" class="rotate" /><p><h6></h6>Security, Privacy and Digital Forensics</h6></p></div>
+                                     <div class="rotate-div"><img src="images\language-tec.jpg" class="rotate" /><p><h6></h6>Internet of Things</h6></p></div>
                                 </div>
                   
                             </div>
@@ -685,7 +802,21 @@ tr:nth-child(odd) {
                         <div class="box-div"></div>
                   </div>
 
-                  <div id="video-div" class="shadow-div"></div>
+                 <!-- <div id="video-div" class="shadow-div"></div> -->
+
+
+
+
+
+                  <div id="bottom-div">
+                        <div id="bottom1-div"></div>
+                        <div id="bottom1-div"></div>
+                        <div id="bottom1-div"></div>
+
+                  </div>
+
+
+                  <div id="footer-div"></div>
 
       </div>
 
