@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sticky Nav Bar</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+             *{
+                    margin:0px;
+                    padding:0px;
+                    font-family:arial;
+                    box-sizing:border-box;
+              }
+
+             body
+             {
+                   display:flex;
+                   flex-direction:column;
+             }
+
+             #wrapper-div
+             {
+                   display:flex;
+                   flex-direction:column;
+                   width:100%;
+                   min-height: 6.25rem;
+                   margin:auto;
+             }
+
+           
+
+            
+/**
+             ul.nav li:hover {
+              background-color: #dcdfe5;
+      cursor: pointer;
+            }
+  
+             ul.nav li{
+              
+   color: rgb(58, 58, 58);
+   display: block;
+             }
+
+ **/            
+
+             .navbar .navbar-brand {
+    color: rgb(58, 58, 58);
+             }
+  
+ 
+  
+             .outer-div{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-height: 6.25rem;
+      margin-top: 6.25rem;
+    }
+
+    .inner1-div{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      min-height: 3.125rem;
+      justify-content: space-evenly;
+     
+    }
+
+    .inner2-div{
+      display: flex;
+      flex-wrap: wrap;
+      width: 40%;
+      flex-direction: row;
+      min-height: 6.25rem;
+      justify-content: space-evenly;
+      margin:0 auto;
+     
+
+    }
+
+    
+    .inner22-div{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-height: 6.25rem;
+      justify-content: space-evenly;
+      width: 60%;
+      margin:0 auto;
+    
+    }
+
+         
+    .inner2-1-div{
+      display: flex;
+      flex-direction:column;
+      min-height: 6.25rem;
+         
+    }
+
+
+    .patron-div{
+      display: flex;
+      flex-direction:column;
+      min-height: 6.25rem;
+      margin:0 auto;
+         
+    }
+
+    .convener-div{
+      display: flex;
+      flex-direction:column;
+      min-height: 6.25rem;
+      margin:0 auto;
+         
+    }
+
+
+    .inner2-1-1-div{
+      display: flex;
+      flex-direction:column;
+      flex-basis: 100%;
+      min-height: 6.25rem;
+      
+      justify-content: center;
+      
+      
+      
+    }
+
+
+    .inner22-1-div{
+      display: flex;
+      flex-direction:column;
+      min-height: 6.25rem;
+    }
+
+
+    .inner2-2-div{
+      display: flex;
+      flex-direction: column;
+      min-height: 6.25rem;
+      
+   }
+   
+   .inner22-2-div{
+      display: flex;
+      flex-direction: column;
+      
+      min-height: 6.25rem;
+     
+      
+   }
+
+   .inner22-3-div{
+      display: flex;
+      flex-direction: column;
+     
+      min-height: 6.25rem;
+      
+      
+   }
+
+
+
+    #imgone{
+      
+      width: 28.125rem;
+      min-height: 28.125rem;
+      border-radius: 50%;
+        
+
+    }
+    .txth5{
+      text-align: center;
+    }
+
+    
+    #imgtwo{
+      width: 28.125rem;
+      min-height: 28.125rem;
+      border-radius: 50%;
+    }
+
+
+    #imgthree{
+      width: 28.125rem;
+      min-height: 28.125rem;
+      border-radius: 50%;
+    }
+
+    .inner2-3-div{
+
+      display: flex;
+      flex-direction: row;
+      flex-basis: 50%;
+      min-height: 6.25rem;
+    }
+
+    .inner3-div{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      min-height: 0.625rem;
+    }
+
+    .inner4-div{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      min-height: 0.625rem;
+    }
+
+    .inner5-div{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      min-height: 0.625rem;
+    }
+
+
+    .advb-div{
+
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .advb1-div{
+
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    min-height: 3.125rem;
+   }
+   
+
+   .advb2-div{
+
+   display: flex;
+   flex-direction:column;
+   width: 100%;
+   min-height: 3.125rem;
+   }
+
+   .advb2-div li{
+
+    font-size: 17px;
+   }
+   
+
+   .techpc-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.techpc1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.techpc2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.techpc2-div li{
+
+font-size: 17px;
+}
+    
+
+ 
+.strc-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.strc1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.strc2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.strc2-div li{
+
+font-size: 17px;
+}
+    
+.ppc-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.ppc1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.ppc2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.ppc2-div li{
+
+font-size: 17px;
+}
+
+
+
+.spc-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.spc1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.spc2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.spc2-div li{
+
+font-size: 17px;
+}
+
+
+.finc-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.finc1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.finc2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.finc2-div li{
+
+font-size: 17px;
+}
+
+.wit-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.wit1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.wit2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.wit2-div li{
+
+font-size: 17px;
+}
+
+
+.stc-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.stc1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.stc2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.stc2-div li{
+
+font-size: 17px;
+}
+
+.footer-black{
+  display: flex;
+  flex-direction: column;
+background-color: black;
+width: 100%;
+min-height: 200px;
+margin-top: 100px;
+
+}
+
+
+
+  </style>
+</head>
+
+
+<body >
+
+
+  <div id="wrapper-div">
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid" style=" box-shadow: 0px 1px 25px black; background-color: #FFFF; display: flex;flex-direction: row;margin: auto;">
+    <div class="navbar-header" style="padding-left: 10%;">
+      <a class="navbar-brand" href="index.html" style="color: rgb(0, 0, 0); "><b>PCCIM 2023</b></a>
+    </div>
+    <ul class="nav navbar-nav" style="padding-left: 5%; color: grey;">
+      <li class="dropdown" style="padding-right: 2rem;">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:rgb(58, 58, 58); background-color: #FFFF;">
+          Call For Papers <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Regular Session</a></li>
+            <li><a href="#">Special Session</a></li>
+            <li><a href="#">Apporved Special Session</a></li>                        
+          </ul>
+        </li>
+        <li class="dropdown" style="padding-right: 5rem;">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:rgb(58, 58, 58); background-color: #FFFF;">
+            Authors<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Authors</a></li>
+              <li><a href="#">Awards</a></li>
+              <li><a href="#">Camera Ready Paper</a></li>                        
+            </ul>
+          </li>
+      <li style="padding-right: 2rem;"><a href="#" style="color:rgb(58, 58, 58);">Registration</a></li>
+      <li style="padding-right: 2rem;"><a href="#" style="color:rgb(58, 58, 58);">Speakers</a></li>
+      <li style="padding-right: 2rem;"><a href="#" style="color:rgb(58, 58, 58);">Commitee</a></li>
+      <li style="padding-right: 2rem;"><a href="#" style="color:rgb(58, 58, 58);">Sponsors</a></li>
+      <li style="padding-right: 2rem;"><a href="#" style="color:rgb(58, 58, 58);">About</a></li>
+      <li ><a href="#" >Contact</a></li>
+    </ul>
+  </div>
+</nav>
+  
+
+
+
+
+
+
+
+
+   <div class="outer-div" >
+
+     <div class="inner1-div" ><p><h1><b style="font-size:5rem;">Chief Patrons</b></h1></p></div>
+     <div class="inner22-div" >
+          <div class="inner22-1-div" ><img id="imgone" src="images\Chairman-1.jpg" alt="#"><h5 class="txth5"><b>Sri Marri Rajasekhar Reddy</b></h5><p style="text-align: center;">Chairman - IARE</p></div>
+          <div class="inner22-2-div" ><img id="imgtwo" src="images\Executive-Director-and-Treasurer-1.jpg" alt="#"><h5 class="txth5"><b>Sri Ch Sathi Reddy</b></h5><p style="text-align: center;">Secretary and Correspondent - IARE</p></div>
+          <div class="inner22-3-div" ><img id="imgthree" src="images\Secretary-and-Correspondent-1.jpg" alt="#"><h5 class="txth5"><b>Sri B Rajeshwar Rao</b></h5><p style="text-align: center;">Executive Director & Treasurer - IARE</p></div>
+    </div>
+  
+   </div> 
+
+   <div class="outer-div" >
+
+    <div class="inner1-div" ><p><h1><b style="font-size:5rem;">Patron</b></h1></p></div>
+    <div class="patron-div" >
+           <div class="inner2-1-1-div" >
+                  <img id="imgone" src="images\IARE10001.jpg" alt="#" ><h5 class="txth5"><b>Dr. L V Narasimha Prasad</b></h5><p style="text-align: center;">Principal and Professor of CSE - IARE</p></div>
+           
+    </div>
+    
+ </div>
+
+ <div class="outer-div" >
+
+  <div class="inner1-div" ><p><h1><b style="font-size:5rem;">Organising Chairman</b></h1></p></div>
+  <div class="convener-div" >
+         <div class="inner2-1-1-div" >
+                <img id="imgone" src="images\Dr.D Shobha Rani.jpg" alt="#" ><h5 class="txth5"><b>Dr.D Shobha Rani</b></h5><p style="text-align: center;">Controller of Examinations - IARE</p></div>
+         
+  </div>
+  
+</div>
+
+ <div class="outer-div" >
+
+  <div class="inner1-div" ><p><h1><b style="font-size:5rem;">Coordinators</b></h1></p></div>
+     <div class="inner2-div" >
+         <div class="inner2-1-div" ><img id="imgone" src="images\Dr.K Rajendra Prasad.jpg" alt="#"><h5 class="txth5"><b>Dr.K Rajendra Prasad</b></h5><p style="text-align: center;">Dean of Sponsored Research<br> and
+                  Professor in CSE - IARE</p></div>
+         <div class="inner2-2-div" ><img id="imgtwo" src="images\Dr.B D Y Sunil.jpg" alt="#"><h5 class="txth5"><b>Dr.B D Y Sunil</b></h5><p style="text-align: center;">Dean of Academic Research<br> and
+          Associate Professor in ME - IARE</p></div>
+     </div>
+  
+</div>
+
+
+
+<div class="outer-div" >
+
+  <div class="inner1-div" ><p><h1><b style="font-size:5rem;">Special Session Executive Chairs</b></h1></p></div>
+  <div class="inner22-div" >
+       <div class="inner22-1-div" ><img id="imgone" src="images\one.jpg" alt="#"><h5 class="txth5">Sukumar Mishra</h5><p style="text-align: center;">Indian Institute of Technology Delhi, India</p></div>
+       <div class="inner22-2-div" ><img id="imgtwo" src="images\two.jpg" alt="#"><h5 class="txth5">Sukumar Mishra</h5><p style="text-align: center;">Indian Institute of Technology Delhi, India</p></div>
+       <div class="inner22-3-div" ><img id="imgthree" src="images\two.jpg" alt="#"><h5 class="txth5">Sukumar Mishra</h5><p style="text-align: center;">Indian Institute of Technology Delhi, India</p></div>
+  </div>
+  
+</div> 
+
+
+
+
+<div class="advb-div" >
+    <div class="advb1-div" style="font-size:5rem; padding-top: 50px;"><p style="margin-right: 11%;"><h1><b> Advisory Board</b></h1></p></div>
+     <div class="advb2-div" >
+      
+      <ul style="list-style-type: disc; padding-left: 12%; padding-top: 50px;">
+        <li>Ahmed Zobaa, Brunel University London, UK</li>
+        <li>Almoataz Y Abdelaziz, Future University in Egypt, New Cairo, Egypt</li>
+        <li>Akshya Swain, University of Auckland, New Zealand</li>
+        <li>Bidyadhar Subudhi, Indian Institute of Technology Goa, India</li>
+        <li>Jihong Wang, University of Warwick, UK</li>
+        <li>Josep M Guerrero, Aalborg University, Denmark</li>
+        <li>K.R. Suresh Nair, Chair-2022, IEEE India Council</li>
+        <li>N C Shivaprakash, Indian Institute of Science Bangalore, India</li>
+        <li>Om Parkash Malik, University of Calgary, Canada</li>
+        <li>S A Soman, Indian Institute of Technology Bombay, India</li>
+        <li>Sanjib Kumar Panda, National University of Singapore</li>
+        <li>Sivaji Chakravorti, Jadavpur University, Kolkata, India</li>
+        <li>Sushil Chauhan, National Institute of Technology Hamirpur, India</li>
+        <li>Thomas Braunl, University of Western Australia, Perth, Australia</li>
+        <li>Technical Program Committ</li>
+      </ul>
+    </div>
+</div>  
+
+
+
+<div class="techpc-div" >
+  <div class="techpc1-div" style="font-size:5rem;  padding-top: 50px;"><p style="margin-right: 11%;"><h1><b> Technical Program Committee</b></h1></p></div>
+   <div class="techpc2-div" >
+    
+    <ul style="list-style-type: disc; padding-left: 12%; padding-top: 50px;">
+
+    <li>A R Bhoi, Gm (Elect.), IFACL, Odisha, India</li>
+    <li>Almoataz Y Abdelaziz, Future University in Egypt, New Cairo, Egypt</li>
+    <li>Anup Kr Panda, National Institute of Technology Rourkela, India</li>
+    <li>Anurekha Nayak, DRIEMS Group of Institutions, Odisha, India</li>
+    <li>Ashok Kumar Pradhan, Indian Institute of Technology Kharagpur, India</li>
+    <li>Aurobinda Panda, National Institute of Technology Sikkim, India</li>
+    <li>B Chitti Babu, IIITDM Kancheepuram, India</li>
+    <li>Debapriya Das, Indian Institute of Technology Kharagpur, India</li>
+    <li>G Sree Lakshmi Devi, VBIT, Hyderabad, India</li>
+    <li>J B V Reddy, DST, New Delhi, India</li>
+    <li>K Siva Kumar, Indian Institute of Technology Hyderabad, India</li>
+    <li>Kaibalya Prasad Panda, PDEU, Gujarat, India</li>
+    <li>Madhu Singh, National Institute of Technology Jamshedpur, India</li>
+    <li>Mohammad Amin, NTNU, Norway</li>
+    <li>Monalisa Biswal, National Institute of Technology Raipur, India</li>
+    <li>Moushumi Patowary, Jorhat Engineering College, Assam, India</li>
+    <li>Narendra Babu P, VIT Bhopal University, Bhopal, India</li>
+    <li>Nutan Saha, VSS University of Technology Burla, India</li>
+    <li>Parusharamulu Buduma, Indian Institute of Technology Delhi, India</li>
+    <li>Pratap Sekhar Puhan, SNIST Hyderabad, India</li>
+    <li>Praveen Tripathy, Indian Institute of Technology Guwahati, India</li>
+    <li>Priyabrat Garanayak, IIIT Una, Himachal Pradesh, India</li>
+    <li>Puja Dash, Gayatri Vidya Parishad College of Engineering, Visakhapatnam, India</li>
+    <li>R N Patel, National Institute of Technology Raipur,India</li>
+    <li>S Vasudevamurthy, Dr. Ambedkar Institute of Technology, Bangalore, India</li>
+    <li>Saad Mekhilef, University of Malaya, Malaysia</li>
+    <li>Satyabrata Sahoo, NMREC Hyderabad, India</li>
+    <li>Sh Santanu Borgohain, NIELIT, Shillong, India</li>
+    <li>Smitha Joyce Pinto, MIT Mysore, India</li>
+    <li>Soumya Ranjan Mohanty, Indian Institute of Technology (BHU) Varanasi, India</li>
+    <li>Subhom Sahoo, Aalborg University, Denmark</li>
+    <li>Subrata Banerjee, National Institute of Technology Durgapur, India</li>
+    <li>Sze Sing Lee, Newcastle University of Singapore</li>
+    <li>T B Dayananda, Dr. Ambedkar Institute of Technology, Bangalore, India</li>
+    <li>Tulika Bhattacharjee, Central Power Research Institute, Bangalore, India</li>
+    <li>Trapti Jain, Indian Institute of Technology Indore, India</li>
+    <li>Vinod Khadkikar, Khalifa University, UAE</li>
+    <li>Vitthal S Bandal, Government Polytechnic, Pune, India</li>
+    <li>B Rajanarayan Prusty,(ACED),Alliance University, Bengaluru, India</li>
+  
+    </ul>
+  </div>
+</div>  
+
+ 
+
+<div class="strc-div" >
+  <div class="strc1-div" style="font-size:5rem; padding-top: 50px;"><p style="margin-right: 11%;"><h1><b> Streening Committee</b></h1></p></div>
+   <div class="strc2-div" >
+    
+    <ul style="list-style-type: disc; padding-left: 12%; padding-top: 50px;">
+
+    <li>A Bhattacharjee, NIT Meghalaya</li>
+    <li>H C Das, NIT Meghalaya</li>
+    <li>C Marthong, NIT Meghalaya</li>
+    <li>G K Dutta, NIT Meghalaya</li>
+    <li>R N Mahapatra, NIT Meghalaya</li>
+    <li>P S Mangang, NIT Meghalaya</li>
+    <li>P Rangababu, NIT Meghalaya</li>
+    <li>N K Nath, NIT Meghalaya</li>
+    <li>A Nath, NIT Meghalaya</li>
+    <li>Yogita, NIT Meghalaya</li>
+    <li>H M Kalita, NIT Meghalaya</li>
+    <li>B Kumbhakar, NIT Meghalaya</li>
+        
+    </ul>
+  </div>
+</div>  
+
+
+
+
+<div class="ppc-div" >
+  <div class="ppc1-div" style="font-size:5rem; padding-top: 50px;"><p style="margin-right: 11%;"><h1><b> Publicity & publication Chairs</b></h1></p></div>
+   <div class="ppc2-div" >
+    
+    <ul style="list-style-type: disc; padding-left: 12%; padding-top: 50px;">
+
+    <li>Atanu Banerjee, NIT Meghalaya</li>
+    <li>Sanjoy Debbarma, NIT Meghalaya</li>
+    <li>Piyush Pratap Singh, NIT Meghalaya</li>
+        
+    </ul>
+  </div>
+</div>  
+  
+<div class="spc-div" >
+  <div class="spc1-div" style="font-size:5rem; padding-top: 50px;"><p style="margin-right: 11%;"><h1><b> Sponsorship Chairs</b></h1></p></div>
+   <div class="spc2-div" >
+    
+    <ul style="list-style-type: disc; padding-left: 12%; padding-top: 50px;">
+
+    <li>Supriyo Das, NIT Meghalaya</li>
+    <li>Rakesh Roy, NIT Meghalaya</li>
+   
+        
+    </ul>
+  </div>
+</div>  
+
+  
+<div class="finc-div" >
+  <div class="finc1-div" style="font-size:5rem; padding-top: 50px;"><p style="margin-right: 11%;"><h1><b> Finance Chairs</b></h1></p></div>
+   <div class="finc2-div" >
+    
+    <ul style="list-style-type: disc; padding-left: 12%; padding-top: 50px;">
+
+    <li>Shaik Affijulla, NIT Meghalaya</li>
+    <li>Ksh Milan Singh, NIT Meghalaya</li>
+   
+        
+    </ul>
+  </div>
+</div>  
+
+ 
+
+<div class="wit-div" >
+  <div class="wit1-div" style="font-size:5rem; padding-top: 50px;"><p style="margin-right: 11%;"><h1><b> Web & IT Chairs</b></h1></p></div>
+   <div class="wit2-div" >
+    
+    <ul style="list-style-type: disc; padding-left: 12%; padding-top: 50px;">
+
+    <li>S S Yadav, NIT Meghalaya</li>
+    <li>Surmila Thocklom, NIT Meghalaya</li>
+    <li>Ramyani Chakrabarty, NIT Meghalaya</li>
+        
+    </ul>
+  </div>
+</div>  
+
+
+
+<div class="stc-div" >
+  <div class="stc1-div" style="font-size:5rem; padding-top: 50px;"><p style="margin-right: 11%;"><h1><b> Student Committee</b></h1></p></div>
+   <div class="stc2-div" >
+    
+    <ul style="list-style-type: disc; padding-left: 12%; padding-top: 50px;">
+
+    
+    <li>Satyavarta Kumar Prince, NIT Meghalaya</li>
+    <li>Sumant Kumar Dalai, NIT Meghalaya</li>
+    <li>Madhav Kumar, NIT Meghalaya</li>
+    <li>Pesingi Veerendra Rajesh Varma, NIT Meghalaya</li>
+    <li>Manish Kurre, NIT Meghalaya</li>
+    <li>Priyankar Roy, NIT Meghalaya</li>
+    <li>Ajay Anand, NIT Meghalaya</li>
+    <li>Kingshuk Roy, NIT Meghalaya</li>
+    <li>Bodhisatwa Bhattacharya, NIT Meghalaya</li>
+    <li>Edapha Rhema Jones Chullai, NIT Meghalaya</li>
+    <li>Dip Kumar Biswas, NIT Meghalaya</li>
+    <li>Liza Debbarama, NIT Meghalaya</li>
+        
+    </ul>
+  </div>
+</div>  
+  
+ 
+<footer class="footer-black">
+
+  
+
+
+  <div class="footer1-div"><p style="text-align: center; margin-top: 40px;color: #757373;">© PCCIM 2023. All Rights Reserved.</p></div>
+     <div class="footer2-div" ><p style="text-align: center; margin-top: 5px; "><a href="#" style="color: #757373; text-decoration: none;">About Us - </a><a href="#" style="color: #757373; text-decoration: none;">Contact Us</a></p></div>
+      <div class="footer3-div" > <p style="text-align: center; margin-top: 30px;color: #757373;">Developed By IARE</p></div>
+     
+ 
+</footer>
+
+</div>
+
+</body>
+
+</html>
