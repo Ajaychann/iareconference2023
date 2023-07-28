@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sticky Nav Bar</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+             *{
+                    margin:0px;
+                    padding:0px;
+                    font-family:arial;
+                    box-sizing:border-box;
+              }
+
+             body
+             {
+                   display:flex;
+                   flex-direction:column;
+             }
+
+             #wrapper-div
+             {
+                   display:flex;
+                   flex-direction:column;
+                   width:100%;
+                   min-height: 6.25rem;
+                   margin:auto;
+             }
+
+           
+
+            
+/**
+             ul.nav li:hover {
+              background-color: #dcdfe5;
+      cursor: pointer;
+            }
+  
+             ul.nav li{
+              
+   color: rgb(58, 58, 58);
+   display: block;
+             }
+
+ **/            
+
+             .navbar .navbar-brand {
+    color: rgb(58, 58, 58);
+             }
+  
+ 
+  
+             .outer-div{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-height: 6.25rem;
+      margin-top: 6.25rem;
+    }
+
+    .inner1-div{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      min-height: 3.125rem;
+      justify-content: space-evenly;
+     
+    }
+
+    .inner2-div{
+      display: flex;
+      flex-wrap: wrap;
+      width: 40%;
+      flex-direction: row;
+      min-height: 6.25rem;
+      justify-content: space-evenly;
+      margin:0 auto;
+     
+
+    }
+
+    
+    .inner22-div{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-height: 6.25rem;
+      justify-content: space-evenly;
+      width: 80%;
+      margin:0 auto;
+    
+    }
+
+         
+    .inner2-1-div{
+      display: flex;
+      flex-direction:column;
+      min-height: 6.25rem;
+         
+    }
+
+
+    .patron-div{
+      display: flex;
+      flex-direction:column;
+      min-height: 6.25rem;
+      margin:0 auto;
+         
+    }
+
+    .convener-div{
+      display: flex;
+      flex-direction:column;
+      min-height: 6.25rem;
+      margin:0 auto;
+         
+    }
+
+
+    .inner2-1-1-div{
+      display: flex;
+      flex-direction:column;
+      flex-basis: 100%;
+      min-height: 6.25rem;
+      
+      justify-content: center;
+      
+      
+      
+    }
+
+
+    .inner22-1-div{
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+      min-height: 6.25rem;
+    }
+
+
+    .inner2-2-div{
+      display: flex;
+      flex-direction: column;
+      min-height: 6.25rem;
+      
+   }
+   
+   .inner22-2-div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 6.25rem;
+     
+      
+   }
+
+   .inner22-3-div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 6.25rem;
+      
+      
+   }
+
+#btn{
+
+        background-color: #FFFF;
+        border: 0.125rem solid blue;
+        width: 150px;
+        min-height: 40px;
+        border-radius: 5px;
+        
+}
+
+#anchor{
+    text-decoration: none;
+    color: blue;
+}
+
+#btn:hover{
+    color: #FFFF;
+    background-color: blue;
+    
+}
+
+#btn:hover #anchor{
+    color: #FFFF;
+}
+
+
+
+
+
+    #imgone{
+      
+      width: 22rem;
+      min-height: 22rem;
+      border-radius: 50%;
+        
+
+    }
+    .txth5{
+      text-align: center;
+    }
+
+    
+    #imgtwo{
+      width: 22rem;
+      min-height: 22rem;
+      border-radius: 50%;
+    }
+
+
+    #imgthree{
+      width: 22rem;
+      min-height: 22rem;
+      border-radius: 50%;
+    }
+
+    .inner2-3-div{
+
+      display: flex;
+      flex-direction: row;
+      flex-basis: 50%;
+      min-height: 6.25rem;
+    }
+
+    .inner3-div{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      min-height: 0.625rem;
+    }
+
+    .inner4-div{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      min-height: 0.625rem;
+    }
+
+    .inner5-div{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      min-height: 0.625rem;
+    }
+
+
+
+
+    
+
+
+ .center {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  align-items: center;
+  height: 50px;
+  border: 3px solid blue; 
+}
+
+
+
+
+
+    .advb-div{
+
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .advb1-div{
+
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    min-height: 3.125rem;
+   }
+   
+
+   .advb2-div{
+
+   display: flex;
+   flex-direction:column;
+   width: 100%;
+   min-height: 3.125rem;
+   }
+
+   .advb2-div li{
+
+    font-size: 17px;
+   }
+   
+
+   .techpc-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.techpc1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.techpc2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.techpc2-div li{
+
+font-size: 17px;
+}
+    
+
+ 
+.strc-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.strc1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.strc2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.strc2-div li{
+
+font-size: 17px;
+}
+    
+.ppc-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.ppc1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.ppc2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.ppc2-div li{
+
+font-size: 17px;
+}
+
+
+
+.spc-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.spc1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.spc2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.spc2-div li{
+
+font-size: 17px;
+}
+
+
+.finc-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.finc1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.finc2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.finc2-div li{
+
+font-size: 17px;
+}
+
+.wit-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.wit1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.wit2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.wit2-div li{
+
+font-size: 17px;
+}
+
+
+.stc-div{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.stc1-div{
+
+display: flex;
+flex-direction:row;
+width: 100%;
+min-height: 3.125rem;
+}
+
+
+.stc2-div{
+
+display: flex;
+flex-direction:column;
+width: 100%;
+min-height: 3.125rem;
+}
+
+.stc2-div li{
+
+font-size: 17px;
+}
+
+.footer-black{
+  display: flex;
+  flex-direction: column;
+background-color: black;
+width: 100%;
+min-height: 100px;
+margin-top: 100px;
+
+}
+
+
+
+  </style>
+</head>
+
+
+<body >
+
+
+  <div id="wrapper-div">
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid" style=" box-shadow: 0px 1px 25px black; background-color: #FFFF; display: flex;flex-direction: row;margin: auto;">
+    <div class="navbar-header" style="padding-left: 10%;">
+      <a class="navbar-brand" href="index.html" style="color: rgb(0, 0, 0); "><b>PCCIM 2023</b></a>
+    </div>
+    <ul class="nav navbar-nav" style="padding-left: 5%; color: grey;">
+      <li class="dropdown" style="padding-right: 2rem;">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:rgb(58, 58, 58); background-color: #FFFF;">
+          Call For Papers <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Regular Session</a></li>
+            <li><a href="#">Special Session</a></li>
+            <li><a href="#">Apporved Special Session</a></li>                        
+          </ul>
+        </li>
+        <li class="dropdown" style="padding-right: 5rem;">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:rgb(58, 58, 58); background-color: #FFFF;">
+            Authors<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Authors</a></li>
+              <li><a href="#">Awards</a></li>
+              <li><a href="#">Camera Ready Paper</a></li>                        
+            </ul>
+          </li>
+      <li style="padding-right: 2rem;"><a href="#" style="color:rgb(58, 58, 58);">Registration</a></li>
+      <li style="padding-right: 2rem;"><a href="#" style="color:rgb(58, 58, 58);">Speakers</a></li>
+      <li style="padding-right: 2rem;"><a href="committee.html" style="color:rgb(58, 58, 58);">Committee</a></li>
+      <li style="padding-right: 2rem;"><a href="#" style="color:rgb(58, 58, 58);">Sponsors</a></li>
+      <li style="padding-right: 2rem;"><a href="#" style="color:rgb(58, 58, 58);">About</a></li>
+      <li style="padding-right: 2rem;"><a href="#" style="color:rgb(58, 58, 58);">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="outer-div">
+
+    <div class="inner1-div" ><p><h1><b style="font-size:5rem;">Keynote Speakers</b></h1></p></div>
+    <div class="inner22-div" style="margin-top: 70px;">
+         <div class="inner22-1-div" ><img id="imgone" src="images\Chairman-1.jpg" alt="#"><h5 class="txth5"><b>Sri Marri Rajasekhar Reddy</b></h5><p style="text-align: center;">Chairman - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+         <div class="inner22-2-div" ><img id="imgtwo" src="images\Executive-Director-and-Treasurer-1.jpg" alt="#"><h5 class="txth5"><b>Sri Ch Sathi Reddy</b></h5><p style="text-align: center;">Secretary and Correspondent - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+         <div class="inner22-3-div" ><img id="imgthree" src="images\Secretary-and-Correspondent-1.jpg" alt="#"><h5 class="txth5"><b>Sri B Rajeshwar Rao</b></h5><p style="text-align: center;">Executive Director & Treasurer - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+   </div>
+
+   
+     
+
+   <div class="inner22-div" style="margin-top: 200px;">
+    <div class="inner22-1-div" ><img id="imgone" src="images\Chairman-1.jpg" alt="#"><h5 class="txth5"><b>Sri Marri Rajasekhar Reddy</b></h5><p style="text-align: center;">Chairman - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+         <div class="inner22-2-div" ><img id="imgtwo" src="images\Executive-Director-and-Treasurer-1.jpg" alt="#"><h5 class="txth5"><b>Sri Ch Sathi Reddy</b></h5><p style="text-align: center;">Secretary and Correspondent - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+         <div class="inner22-3-div" ><img id="imgthree" src="images\Secretary-and-Correspondent-1.jpg" alt="#"><h5 class="txth5"><b>Sri B Rajeshwar Rao</b></h5><p style="text-align: center;">Executive Director & Treasurer - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+  </div>
+ 
+  </div> 
+
+
+
+
+  <div class="outer-div" style="margin-top: 100px;">
+
+    <div class="inner1-div" ><p><h1><b style="font-size:5rem;">Panel Discussion</b></h1></p></div>
+    <div class="inner22-div" style="margin-top: 70px;" >
+        <div class="inner22-1-div" ><img id="imgone" src="images\Chairman-1.jpg" alt="#"><h5 class="txth5"><b>Sri Marri Rajasekhar Reddy</b></h5><p style="text-align: center;">Chairman - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+        <div class="inner22-2-div" ><img id="imgtwo" src="images\Executive-Director-and-Treasurer-1.jpg" alt="#"><h5 class="txth5"><b>Sri Ch Sathi Reddy</b></h5><p style="text-align: center;">Secretary and Correspondent - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+        <div class="inner22-3-div" ><img id="imgthree" src="images\Secretary-and-Correspondent-1.jpg" alt="#"><h5 class="txth5"><b>Sri B Rajeshwar Rao</b></h5><p style="text-align: center;">Executive Director & Treasurer - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+  </div>
+   <div class="inner22-div" style="margin-top: 200px;">
+    <div class="inner22-1-div" ><img id="imgone" src="images\Chairman-1.jpg" alt="#"><h5 class="txth5"><b>Sri Marri Rajasekhar Reddy</b></h5><p style="text-align: center;">Chairman - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+         <div class="inner22-2-div" ><img id="imgtwo" src="images\Executive-Director-and-Treasurer-1.jpg" alt="#"><h5 class="txth5"><b>Sri Ch Sathi Reddy</b></h5><p style="text-align: center;">Secretary and Correspondent - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+         <div class="inner22-3-div" ><img id="imgthree" src="images\Secretary-and-Correspondent-1.jpg" alt="#"><h5 class="txth5"><b>Sri B Rajeshwar Rao</b></h5><p style="text-align: center;">Executive Director & Treasurer - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+     </div>
+   
+  </div>
+  <div class="inner22-div" style="margin-top: 200px;">
+    <div class="inner22-1-div" ><img id="imgone" src="images\Chairman-1.jpg" alt="#"><h5 class="txth5"><b>Sri Marri Rajasekhar Reddy</b></h5><p style="text-align: center;">Chairman - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+    <div class="inner22-2-div" ><img id="imgtwo" src="images\Executive-Director-and-Treasurer-1.jpg" alt="#"><h5 class="txth5"><b>Sri Ch Sathi Reddy</b></h5><p style="text-align: center;">Secretary and Correspondent - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+    <div class="inner22-3-div" ><img id="imgthree" src="images\Secretary-and-Correspondent-1.jpg" alt="#"><h5 class="txth5"><b>Sri B Rajeshwar Rao</b></h5><p style="text-align: center;">Executive Director & Treasurer - IARE</p><button id="btn"><a id="anchor" href="https://samvidha.iare.ac.in/index" >View Details</a></button></div>
+</div>
+
+  </div> 
+
+
+
+
+
+  
+
+ 
+
+ <div class="outer-div" >
+
+  <div class="inner1-div" ><p><h1><b style="font-size:5rem;">Young Professional Session</b></h1></p></div>
+     <div class="inner2-div" style="margin-top: 70px;">
+         <div class="inner2-1-div" ><img id="imgone" src="images\Dr.K Rajendra Prasad.jpg" alt="#"><h5 class="txth5"><b>Dr.K Rajendra Prasad</b></h5><p style="text-align: center;">Dean of Sponsored Research<br> and
+                  Professor in CSE - IARE</p></div>
+         <div class="inner2-2-div" ><img id="imgtwo" src="images\Dr.B D Y Sunil.jpg" alt="#"><h5 class="txth5"><b>Dr.B D Y Sunil</b></h5><p style="text-align: center;">Dean of Academic Research<br> and
+          Associate Professor in ME - IARE</p></div>
+     </div>
+  
+</div>
+ 
+ 
+<footer class="footer-black">
+
+  
+
+
+  <div class="footer1-div"><p style="text-align: center; margin-top: 20px;color: #a7a7a7;">© PCCIM 2023. All Rights Reserved.</p></div>
+      <div class="footer3-div" > <p style="text-align: center; color: #a7a7a7;">Developed By IARE</p></div>
+     
+ 
+</footer>
+
+</div>
+
+</body>
+
+</html>
